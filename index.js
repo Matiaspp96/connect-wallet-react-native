@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import './global';
-import { registerRootComponent , scheme} from 'expo';
+import { registerRootComponent, scheme } from 'expo';
 const { default: App } = require("./AppWithProviders");
 
 

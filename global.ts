@@ -1,4 +1,12 @@
 import { Platform, LogBox } from "react-native";
+import "intl";
+
+if (Platform.OS === "android") {
+    if (typeof (Intl as any).__disableRegExpRestore === "function") {
+        (Intl as any).__disableRegExpRestore();
+    }
+}
+import "intl/locale-data/jsonp/en";
 
 export interface Global {
     btoa: any
